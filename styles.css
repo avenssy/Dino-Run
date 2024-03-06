@@ -1,0 +1,149 @@
+.main-body {
+  display: flex;
+  flex-direction: column;
+  align-content: center;
+  height: 100vh;
+  margin: 0;
+  overflow: hidden;
+}
+
+.dinosaur {
+  background-image: url("./Images/Dinosaur.png");
+  background-repeat: no-repeat;
+  background-size: contain;
+  height: 60px;
+  width: 130px;
+  position: absolute;
+  align-self: end;
+  margin-bottom: 0;
+  margin-left: 50px;
+  padding: 0;
+  justify-self: left;
+}
+
+.game-background {
+  background-color:rgb(78, 22, 22);
+  height:33%;
+  display: flex;
+  align-content: center;
+}
+.game-sky{
+  background: skyblue;
+  width: 100%;
+  height: 67%;
+  display: flex;
+  flex-direction: row;
+  padding: 0;
+}
+
+.score-container {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+}
+
+.score {
+  height: fit-content;
+  width: fit-content;
+  font-size: 20px;
+  margin-top: 20px;
+  font-family:'Press Start 2P', 'Gabarino', 'Ubuntu';
+}
+
+.buttons {
+  height: fit-content;
+  display: flex;
+  justify-content: end;
+  position: absolute;
+  width: 100%;
+  margin: 10px 10px 0px 0px;
+  z-index: 2;
+}
+
+.reset {
+  background-image: url('./Images/miniResetButton.png');
+  background-repeat: no-repeat;
+  background-size: contain;
+  height: 50px;
+  width: 50px;
+  margin-left: 10px;
+}
+
+.quit {
+  background-image: url('./Images/miniExitButton.png');
+  background-repeat: no-repeat;
+  background-size: contain;
+  margin-left: 10px;
+  height: 50px;
+  width: 50px;
+}
+
+.clouds {
+  background-image: url("https://i.pinimg.com/originals/6a/b6/ed/6ab6ed08d21f05c48e6da543e9f98f5d.png");
+  background-repeat: no-repeat;
+  background-size: contain;
+  position: absolute;
+  z-index: 1;
+  top: 100px;
+  height: 100px;
+  width: 200px;
+  animation-name: moveDiv;
+  animation-duration: 40s;
+  animation-direction: linear;
+  animation-iteration-count: infinite;
+  right: 0;
+}
+
+.cloud1 {
+  animation-duration: 60s;
+  top: 0px;
+}
+
+.cloud2 {
+  animation-duration: 20s;
+  top: 50px;
+}
+
+.cloud3 {
+  animation-duration: 30s;
+  top: 0px;
+}
+
+@keyframes moveDiv {
+    from {
+      right: -10%;
+    }
+    to {
+      right: 110%;
+    }
+}
+
+.enemy-moves {
+  background-image: url('./Images/Tree.png');
+  background-repeat: no-repeat;
+  background-size: contain;
+  position: absolute;
+  height: 100px;
+  width: 100px;
+  align-self: end;
+  animation-name: moveDiv;
+  animation-duration: 30s;
+  animation-direction: linear;
+  animation-iteration-count: infinite;
+  animation-timing-function:linear
+}
+
+.trees1 {
+  animation-duration: 3s;
+}
+
+.trees2 {
+  animation-duration: 4s;
+}
+
+.music {
+  height: 50px;
+  width: 50px;
+  right: 15px;
+  top: 15px;
+}

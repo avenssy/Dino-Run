@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Gabarito&family=Press+Start+2P&family=Ubuntu&display=swap" rel="stylesheet">
+    <link rel="stylesheet" media="screen and (min-width: 300px)" href="home-smaller.css">
+    <link rel="stylesheet" media="screen and (min-width: 600px)" href="home-small.css">
+    <link rel="stylesheet" media="screen and (min-width: 850px)" href="home-mid.css">
+    <script src="app.js" defer></script>
+    <title>Dinosaur Run</title>
+  </head>
+  <body class="main-body">
+    <audio autoplay loop>
+      <source src="./Music/Kevin MacLeod - Pixelland  NO COPYRIGHT 8-bit Music.mp3" type="audio/mpeg">
+      Your browser does not support the audio element.
+    </audio>
+    <div class="game-sky">
+      <div class="clouds cloud1"></div>
+      <div class="clouds cloud2"></div>
+      <div class="clouds cloud3"></div>
+      <div class="question" onclick="myFunction()"><span class="popuptext" id="myPopup">Press spacebar or click to dodge the enemies.</span></div>
+      <img src="./Images/miniMusicButton.png" id="muteButton" onclick="musicFunc()" class="music"/>
+      <img src="./Images/Dinosaur.png" class="home-dino" id="home-dino"/>
+      <div class="home-buttons">
+        <img src="./Images/DinoRunName.png" class="logo"/>
+        <a href="index.html"><div class="home-play" id="homePlay"></div></a>
+        <a href="https://google.com"><div class="home-quit" id="homeQuit"></div></a>
+      </div>
+      <img src="./Images/kingKong.png" class="home-kong"/>
+    </div>
+    <div class="game-background"></div>
+  </body>
+</html>
