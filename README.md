@@ -1,0 +1,1 @@
+This game is a project I made when I was starting to learn how to integrate JavaScript to my HTML and CSS application. Feel free to try playing the game. I know it still has bugs, but it is very memorable to me, as it shows the start of my web development journey.
